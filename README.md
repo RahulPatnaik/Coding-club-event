@@ -94,26 +94,12 @@ Copy code
 
 ### Example: Using LangChain with Groq
 
-python
+Head to [llm.py](https://github.com/RahulPatnaik/Coding-club-event/blob/main/llm.py) in this repository to try it out.
 
-Copy code
+RAG with LangChain-Groq:
+------------------------
 
-```
-from langchain.llms import OpenAI
-import os
-
-groq_api_key = os.environ.get("GROQ_API_KEY")
-url = "https://api.groq.com/openai/v1/chat/completions"
-
-llm = OpenAI(
-    openai_api_key=groq_api_key,
-    openai_api_base=url
-)
-
-response = llm.predict("What are the benefits of Groq in AI applications?")
-print(response)`
-```
-* * * * *
+Head to [rag.py](https://github.com/RahulPatnaik/Coding-club-event/blob/main/rag.py) in this repository to try it out.
 
 Benefits of LangChain-Groq Integration
 --------------------------------------
